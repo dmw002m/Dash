@@ -41,7 +41,7 @@ for i in range(3):
     h = 200
     r = 20
     color = set_color(color_var)
-    when i == 1:
+    if i = 1:
         st.markdown(f"<div style='width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:10px; display:inline-block;'></div>", unsafe_allow_html=True)
     else:
         st.markdown(f"<div style='width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:10px; display:inline;'></div>", unsafe_allow_html=True)
