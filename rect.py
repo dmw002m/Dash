@@ -34,11 +34,11 @@ def set_color(color_var):
     elif color_var == "blue":
         return "#0000ff"
 
-plt.figure()
-
 for i in range(3):
-    rectangle = Rectangle((50*i + 10, 50), 40, 40, linewidth=1, edgecolor='black', facecolor=set_color(color_var), rounded_corners=True)
-    plt.gca().add_patch(rectangle)
-
-plt.axis('scaled')
-st.pyplot()
+    x = 50*i + 10
+    y = 50
+    w = 40
+    h = 40
+    r = 20
+    color = set_color(color_var)
+    st.rectangle((x, y), w, h, color=color, style='rounded')
