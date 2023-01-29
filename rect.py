@@ -33,7 +33,7 @@ def set_color(color_var):
         return "#00ff00"
     elif color_var == "blue":
         return "#0000ff"
-html_code = "<div style='position:relative;'>"
+st.markdown( "<div style='position:relative;'>")
 for i in range(6):
     x = 0
     y = 17*(i-1)
@@ -46,5 +46,5 @@ for i in range(6):
 st.markdown("</div>", unsafe_allow_html=True)    
 
 html_code = "<div style='position:relative;'>"
-st.markdown(f"<div style='position:relative; width:230px; height:230px; background-color: {color}; border-radius: 15px; margin:10px;  top:-300px; left:400px;'></div>", unsafe_allow_html=True)
-st.markdown("</div>", unsafe_allow_html=True)
+st.markdown(f"<div style='outline-color: #000000; outline-style: solid;position:relative; width:230px; height:230px; background-color: {color}; border-radius: 15px; margin:10px;  top:-300px; left:400px;'></div>", unsafe_allow_html=True)
+"</div>", unsafe_allow_html=True """
