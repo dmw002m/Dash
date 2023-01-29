@@ -44,6 +44,6 @@ for i in range(6):
     st.markdown(f"<div style='position:relative; width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:1px;  top:{y}px; left:{x}px;'></div>", unsafe_allow_html=True)
     
     
-st.markdown(f"<div style='position:relative; width:300px; height:300px; background-color: {color}; border-radius: 15px; margin:10px;  top:-100px; left:230px;'></div>", unsafe_allow_html=True)
+st.markdown(f"<div style='position:relative; width:300px; height:300px; background-color: {color}; border-radius: 15px; margin:10px;  top:-200px; left:530px;'></div>", unsafe_allow_html=True)
 
 #st.markdown("</div>", unsafe_allow_html=True)
