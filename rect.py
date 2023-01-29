@@ -34,7 +34,7 @@ def set_color(color_var):
     elif color_var == "blue":
         return "#0000ff"
 html_code = "<div style='position:absolute;'>"
-    
+color = set_color(color_var)
 st.markdown(f"<div style='width:200px; height:200px; background-color: {color}; border-radius: 20px; margin:10px;  top:10px; left:60px;'></div>", unsafe_allow_html=True)
 
 st.markdown("</div>", unsafe_allow_html=True)
