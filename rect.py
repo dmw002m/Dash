@@ -46,5 +46,5 @@ for i in range(3):
     else:
         st.markdown(f"<div style='width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:10px; display:inline;'></div>", unsafe_allow_html=True)
 
-st.markdown("</div>", unsafe_allow_html=True)
+#st.markdown("</div>", unsafe_allow_html=True)
 
