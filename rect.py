@@ -37,11 +37,11 @@ def set_color(color_var):
 st.markdown("<div style='display: flex; flex-wrap: nowrap;'>", unsafe_allow_html=True)
 
 for i in range(3):
-    w = 400
-    h = 400
+    w = 200
+    h = 200
     r = 20
     color = set_color(color_var)
-    st.markdown(f"<div style='width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:10px; display:inline-flex;'></div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:10px; display:block;'></div>", unsafe_allow_html=True)
 
 st.markdown("</div>", unsafe_allow_html=True)
 
