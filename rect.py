@@ -43,7 +43,8 @@ for i in range(6):
     color = set_color(color_var)
     st.markdown(f"<div style='position:relative; width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:1px;  top:{y}px; left:{x}px;'></div>", unsafe_allow_html=True)
     
-    
-st.markdown(f"<div style='position:relative; width:200px; height:200px; background-color: {color}; border-radius: 15px; margin:10px;  top:-300px; left:400px;'></div>", unsafe_allow_html=True)
+st.markdown("</div>", unsafe_allow_html=True)    
 
+html_code = "<div style='position:relative;'>"
+st.markdown(f"<div style='position:relative; width:200px; height:200px; background-color: {color}; border-radius: 15px; margin:10px;  top:-300px; left:400px;'></div>", unsafe_allow_html=True)
 st.markdown("</div>", unsafe_allow_html=True)
