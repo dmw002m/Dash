@@ -39,6 +39,6 @@ for i in range(3):
     y = 50
     w = 40
     h = 40
-    r = 20
+    r = 2
     color = set_color(color_var)
     st.markdown(f"<div style='width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px;'></div>", unsafe_allow_html=True)
