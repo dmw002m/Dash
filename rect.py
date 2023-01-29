@@ -34,13 +34,7 @@ def set_color(color_var):
     elif color_var == "blue":
         return "#0000ff"
 
+    
+st.markdown(f"<div style='width:200px; height:200px; background-color: {color}; border-radius: 20px; margin:10px;  top:10; left:60;'></div>", unsafe_allow_html=True)
 
-st.markdown("<div style='display: flex; width:auto; height:auto;'>", unsafe_allow_html=True)
-for i in range(3):
-    w = 200
-    h = 200
-    r = 20
-    color = set_color(color_var)
-    st.markdown(f"<div style='width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:10px;  top:10; left:60+{i};'></div>", unsafe_allow_html=True)
-st.markdown("</div>", unsafe_allow_html=True)
 
