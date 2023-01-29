@@ -41,4 +41,4 @@ for i in range(3):
     h = 40
     r = 20
     color = set_color(color_var)
-    st.rectangle((x, y), w, h, color=color, style='rounded')
+    st.markdown(f"<div style='width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px'></div>", unsafe_allow_html=True)
