@@ -41,7 +41,7 @@ for i in range(6):
     h = 55
     r = 10
     color = set_color(color_var)
-    st.markdown(f"<div style='position:relative; width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:10px;  top:{y}px; left:{x}px;'></div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='position:relative; width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:1px;  top:{y}px; left:{x}px;'></div>", unsafe_allow_html=True)
     
     
 st.markdown(f"<div style='position:relative; width:300px; height:300px; background-color: {color}; border-radius: 15px; margin:10px;  top:40px; left:60px;'></div>", unsafe_allow_html=True)
