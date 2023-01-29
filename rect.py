@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Rounded Rectangles", page_icon=":guardsman:", layout="wide")
 
@@ -33,8 +34,9 @@ def set_color(color_var):
     elif color_var == "blue":
         return "#0000ff"
 
-# Draw the rectangles
-st.pyplot()
+plt.figure()
 
 for i in range(3):
     plt.fill(rounded_rect(50*i + 10, 50, 40, 40, 10), color=set_color(color_var))
+
+st.pyplot()
