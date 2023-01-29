@@ -36,7 +36,7 @@ def set_color(color_var):
 #html_code = "<div style='position:absolute;'>"
 for i in range(6):
     x = 0
-    y = 20*i
+    y = 20*(i-1)
     w = 200
     h = 50
     r = 15
