@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
+
 
 st.set_page_config(page_title="Rounded Rectangles", page_icon=":guardsman:", layout="wide")
 
