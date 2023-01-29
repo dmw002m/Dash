@@ -38,7 +38,7 @@ for i in range(6):
     x = 0
     y = 40*i
     w = 200
-    h = 50
+    h = 30
     r = 15
     color = set_color(color_var)
     st.markdown(f"<div style='position:relative; width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:10px;  top:{y}px; left:{x}px;'></div>", unsafe_allow_html=True)
