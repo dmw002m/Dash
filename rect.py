@@ -35,7 +35,7 @@ def set_color(color_var):
         return "#0000ff"
 
 
-st.markdown("<div style='display: flex;'>", unsafe_allow_html=True)
+st.markdown("<div style='display: inline-block;'>", unsafe_allow_html=True)
 for i in range(3):
     w = 200
     h = 200
