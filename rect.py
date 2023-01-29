@@ -35,6 +35,8 @@ def set_color(color_var):
         return "#0000ff"
 
 
+st.markdown("<div style='display: flex;'>", unsafe_allow_html=True)
+
 for i in range(3):
     w = 200
     h = 200
@@ -42,9 +44,4 @@ for i in range(3):
     color = set_color(color_var)
     st.markdown(f"<div style='width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:10px; display:inline-block;'></div>", unsafe_allow_html=True)
 
-   # if i == 1:
-  #      st.markdown(f"<div style='width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:10px; display:inline-block;'></div>", unsafe_allow_html=True)
-  #  else:
-  #      st.markdown(f"<div style='width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:10px; display:inline;'></div>", unsafe_allow_html=True)
-
-
+st.markdown("</div>", unsafe_allow_html=True)
