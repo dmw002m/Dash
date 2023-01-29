@@ -39,12 +39,12 @@ for i in range(6):
     y = 17*(i-1)
     w = 200
     h = 55
-    r = 10
+    r = 5
     color = set_color(color_var)
     st.markdown(f"<div style='outline-color: #000000; outline-style: solid; position:relative; width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:1px;  top:{y}px; left:{x}px;'></div>", unsafe_allow_html=True)
     
 st.markdown("</div>", unsafe_allow_html=True)    
 st.markdown("""
 <div style='position:relative;'>
-<div style='outline-color: #000000; outline-style: solid;position:relative; width:230px; height:230px; background-color: {color}; border-radius: 15px; margin:10px;  top:-300px; left:400px;'></div>", unsafe_allow_html=True
+<div style='outline-color: #000000; outline-style: solid;position:relative; width:230px; height:230px; background-color: {color}; border-radius: 15px; margin:10px;  top:-300px; left:400px;'></div>, unsafe_allow_html=True
 </div>", unsafe_allow_html=True """)
