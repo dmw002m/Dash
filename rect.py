@@ -34,7 +34,7 @@ def set_color(color_var):
     elif color_var == "blue":
         return "#0000ff"
 
-st.markdown("<div style='display: flex; flex-wrap: nowrap;'>", unsafe_allow_html=True)
+#st.markdown("<div style='display: flex; flex-wrap: nowrap;'>", unsafe_allow_html=True)
 
 for i in range(3):
     w = 200
