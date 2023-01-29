@@ -34,11 +34,15 @@ def set_color(color_var):
     elif color_var == "blue":
         return "#0000ff"
 
+st.markdown("<div style='display: flex; flex-wrap: nowrap;'>", unsafe_allow_html=True)
+
 for i in range(3):
     x = 50*i + 10
     y = 50
     w = 40
     h = 40
-    r = 2
+    r = 20
     color = set_color(color_var)
     st.markdown(f"<div style='width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:10px; display:inline-block;'></div>", unsafe_allow_html=True)
+
+st.markdown("</div>", unsafe_allow_html=True)
