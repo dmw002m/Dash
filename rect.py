@@ -33,8 +33,8 @@ def set_color(color_var):
         return "#00ff00"
     elif color_var == "blue":
         return "#0000ff"
-html_code = "<div style='position:absolute;'>"
-for i in range(3):
+#html_code = "<div style='position:absolute;'>"
+for i in range(6):
     x = 100+i*150
     y = 10
     w = 200
@@ -43,4 +43,4 @@ for i in range(3):
     color = set_color(color_var)
     st.markdown(f"<div style='position:absolute; width:{w}px; height:{h}px; background-color: {color}; border-radius: {r}px; margin:10px;  top:{y}px; left:{x}px;'></div>", unsafe_allow_html=True)
 
-st.markdown("</div>", unsafe_allow_html=True)
+#st.markdown("</div>", unsafe_allow_html=True)
