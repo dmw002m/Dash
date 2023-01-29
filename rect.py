@@ -5,9 +5,10 @@ st.set_page_config(page_title="Rounded Rectangles", page_icon=":guardsman:", lay
 
 color_var = st.sidebar.selectbox("Select a color", ["red", "green", "blue"])
 
-st.set_cached_value("color_var", color_var)
-
-color_var = st.get_cached_value("color_var")
+st.cache(persist=True)
+def update_color_var():
+    return color_var
+color_var = update_color_var()
 
 # Create a function to generate the rectangles
 def rounded_rect(x, y, w, h, r):
