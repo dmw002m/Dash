@@ -37,6 +37,8 @@ def set_color(color_var):
 plt.figure()
 
 for i in range(3):
-    plt.fill(rounded_rect(50*i + 10, 50, 40, 40, 10), color=set_color(color_var))
+    rectangle = Rectangle((50*i + 10, 50), 40, 40, linewidth=1, edgecolor='black', facecolor=set_color(color_var), rounded_corners=True)
+    plt.gca().add_patch(rectangle)
 
+plt.axis('scaled')
 st.pyplot()
